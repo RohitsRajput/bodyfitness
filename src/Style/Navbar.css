@@ -1,0 +1,56 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 3rem;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
+}
+.nav_list > :hover {
+  color: #f48915;
+  cursor: pointer;
+}
+
+.Nav_btn {
+  width: 6rem;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    padding: 1rem 0;
+  }
+  .Navbar > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .nav_list {
+    flex-direction: column;
+    background-color: #3c3f45;
+    padding: 2rem;
+  }
+}

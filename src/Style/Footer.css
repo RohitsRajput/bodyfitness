@@ -1,0 +1,36 @@
+.Footer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.Footer_blur1 {
+  width: 30rem;
+  height: 14rem;
+  left: 15rem;
+  filter: blur(150px);
+}
+
+.Footer_blur2 {
+  width: 30rem;
+  height: 14rem;
+  right: 15rem;
+  filter: blur(150px);
+  background-color: rgba(234, 21, 21, 0.69);
+}
+
+.link {
+  display: flex;
+  gap: 5rem;
+}
+.link > img {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 10rem;
+}

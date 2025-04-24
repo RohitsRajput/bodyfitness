@@ -1,0 +1,77 @@
+.Join {
+  display: flex;
+  padding: 2rem;
+}
+
+.l_join {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  flex: 1;
+}
+.l_join > hr {
+  width: 10.5rem;
+  border: 2px solid #f48915;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.l_join > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.R_join {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.Email_container {
+  display: flex;
+  gap: 3rem;
+  background-color: #9c9c9c;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.Email_container > input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #d9d9d9;
+  font-size: 16px;
+}
+::placeholder {
+  color: #d9d9d9;
+  font-size: 16px;  
+}
+
+.j_btn {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  outline: none;
+  background-color: #f48915;
+  color: white;
+  font-weight: 700;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Join {
+    flex-direction: column;
+    margin-top: -2rem;
+    gap: 3rem;
+  }
+
+  .l_join > div {
+    flex-direction: column;
+  }
+
+  .R_join {
+    padding: 0 2rem;
+  }
+}
+
+

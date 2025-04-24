@@ -1,0 +1,135 @@
+.Plans {
+  margin-top: -4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+.Plans_blur1 {
+  width: 32rem;
+  height: 30rem;
+  left: 0;
+}
+
+.Plans_blur2 {
+  width: 32rem;
+  height: 30rem;
+  right: 2rem;
+}
+
+/*PLANS TITALS  */
+
+.plans_titals {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+
+/* PLANS CATEGORY */
+
+.plan_category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ITEM LIST */
+
+.item_list {
+  display: flex;
+  flex-direction: column;
+  background-color: #656565;
+  gap: 2rem;
+  width: 16rem;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+.item_list > svg {
+  fill: #f48915;
+  width: 2rem;
+  height: 2rem;
+}
+.item_list > :nth-child(2) {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.item_list > :nth-child(3) {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.item_list > :nth-child(5) {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* FEATURES */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.feature_list {
+  display: flex;
+  gap: 1rem;
+}
+.feature_list > :nth-child(1) {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ITEM LIST JOIN BUTTON */
+
+.plan_btn {
+  background-color: #fff;
+  border: none;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+/* ITEM LIST SECOND CHILD */
+
+.item_list:nth-child(2) {
+  background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  transform: scale(1.1);
+}
+.item_list:nth-child(2) > svg {
+  fill: white;
+}
+.item_list:nth-child(2) > .plan_btn {
+  color: #f48915;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .Plans {
+    margin-top: 1rem;
+  }
+
+  .plans_titals {
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  .plan_category {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .item_list {
+    width: 15rem;
+  }
+
+  .item_list:nth-child(2) {
+    transform: none;
+  }
+}
